@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,300&display=swap');
+body {
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)),
+        url(background.jpg);
+        background-size: cover;
+        height: 100vh;
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+}
+nav {
+    background-color: #505050;
+    height: 100%;
+    width: 300px;
+    position: fixed;
+    transition: all .5s;
+    left: 0;
+}
+.title {
+    background-color: #404040;
+    line-height: 60px;
+    text-align: center;
+    
+    font-size: 1.5em;
+    font-weight:600;
+}
+.list-items {
+    list-style: none;
+}
+.list-items li{
+    padding-left: 50px;
+    line-height: 50px;
+    border-bottom: 1px solid #404040;
+    border-top: 1px solid #606060;
+}
+.list-items li:hover {
+    background-color: #707070;
+    transition: all .5s;
+}
+.list-items li a {
+    text-decoration: none;
+    display: block;
+}
+.list-items li i {
+    padding-right: 20px;
+}
+.brands {
+    position: absolute;
+    display: flex;
+    margin-left: 30px;
+    bottom: 20px;
+    list-style: none;
+}
+.brands li {
+    width: 40px;
+    height: 40px;
+    background-color: #606060;
+    line-height: 40px;
+    text-align: center;
+    margin: 10px;
+    border-radius: 5px;
+}
+.brands li a {
+    display: block;
+}
+.brands li:hover {
+    background-color: #707070;
+    transition: all .5s;
+}
+.checkbox i {
+    position: absolute;
+    color: #404040;
+    background-color: #707070;
+    font-size: 1.5em;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 5px;
+    left: 285px;
+    top: 15px;
+    z-index: 2;
+    cursor: pointer;
+    transition: all .5s;
+}
+input[type=checkbox]{
+    display: none;
+}
+input[type=checkbox]:checked ~ nav{
+ left: -300px;
+}
+input[type=checkbox]:checked ~ .checkbox i{
+    left: 5px;
+}
+@media screen and (max-width: 800px){
+    body {
+    background-image:
+    linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)),
+    url(background1.png);    
+    }
+}
