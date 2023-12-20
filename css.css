@@ -96,6 +96,9 @@ input[type=checkbox]:checked ~ nav{
 input[type=checkbox]:checked ~ .checkbox i{
     left: 285px;
 }
+input[type=checkbox]:checked ~ .checkbox i::before{
+    content: "\f00d";
+}
 @media screen and (max-width: 800px){
     body {
     background-image:
